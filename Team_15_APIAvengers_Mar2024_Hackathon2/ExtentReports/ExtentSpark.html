@@ -1,0 +1,3059 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>USER-API-Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Extent Spark Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr 02, 2024 11:28:37</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr 02, 2024 11:28:37</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr 02, 2024 11:31:05</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>6</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='85%'>
+<b>6</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='14%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='91%'><b>31</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='8%'><b>3</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='95%'><b>178</b> steps passed</small></div>
+<div>
+<small data-tooltip='1%'><b>3</b> steps failed,
+<b>6</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"User Login":3.904,"Batch Module":12.386,"Program Module CRUD Opertaions":1.664,"Batch Module":34.189,"User Module CRUD Operations":92.855,"UserRoleProgramBatchmap":1.377,"User Logout":1.343
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@GetUsersWithUserID</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetAllUsersWithRoles</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@UpdateUser</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@05GetBatchById</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@UpdateUserRoleID</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetAllUserwithProgramID</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetAllProgramsWithAdmins</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PutRequestUpdateBybatchId</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@UpdateUserLoginStatus</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@UpdateUserRoleProgramBatchStatus</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@GetUsersbyroleIDV2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@05GetBatchByName</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetAssignedProgram/Batch(es)ofAllUsers</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DeleteUser</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@PostE2ENewBatch</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PostE2EDelete</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@05GetAllBatches</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetAllActiveUsers</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetAllUserwithRoleID</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@UpdateUserRoleStatus</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CreateNewBatch</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetUserbyprogrambatches</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetAllUsers</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@POST_CreateNewUserWithRole</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PostE2ENewProgram</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetTheCountOfActiveAndInactiveUsers</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 6,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 31,
+failChild: 3,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 178,
+failGrandChild: 3,
+warningGrandChild: 0,
+skipGrandChild: 6,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@GetUsersWithUserID</a><a class="dropdown-item" href="#">@GetAllUsersWithRoles</a><a class="dropdown-item" href="#">@UpdateUser</a><a class="dropdown-item" href="#">@05GetBatchById</a><a class="dropdown-item" href="#">@UpdateUserRoleID</a><a class="dropdown-item" href="#">@GetAllUserwithProgramID</a><a class="dropdown-item" href="#">@GetAllProgramsWithAdmins</a><a class="dropdown-item" href="#">@PutRequestUpdateBybatchId</a><a class="dropdown-item" href="#">@UpdateUserLoginStatus</a><a class="dropdown-item" href="#">@UpdateUserRoleProgramBatchStatus</a><a class="dropdown-item" href="#">@GetUsersbyroleIDV2</a><a class="dropdown-item" href="#">@05GetBatchByName</a><a class="dropdown-item" href="#">@GetAssignedProgram/Batch(es)ofAllUsers</a><a class="dropdown-item" href="#">@DeleteUser</a><a class="dropdown-item" href="#">@PostE2ENewBatch</a><a class="dropdown-item" href="#">@PostE2EDelete</a><a class="dropdown-item" href="#">@05GetAllBatches</a><a class="dropdown-item" href="#">@GetAllActiveUsers</a><a class="dropdown-item" href="#">@GetAllUserwithRoleID</a><a class="dropdown-item" href="#">@UpdateUserRoleStatus</a><a class="dropdown-item" href="#">@CreateNewBatch</a><a class="dropdown-item" href="#">@GetUserbyprogrambatches</a><a class="dropdown-item" href="#">@GetAllUsers</a><a class="dropdown-item" href="#">@POST_CreateNewUserWithRole</a><a class="dropdown-item" href="#">@PostE2ENewProgram</a><a class="dropdown-item" href="#">@GetTheCountOfActiveAndInactiveUsers</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">User Login</p>
+            <p class="text-sm">
+              <span>11:28:37 AM</span> / <span>00:00:03:904</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">User Login</h5>
+<span class='badge badge-success'>04.02.2024 11:28:37 AM</span>
+<span class='badge badge-danger'>04.02.2024 11:28:41 AM</span>
+<span class='badge badge-default'>00:00:03:904</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin able to generate token with valid credential</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Batch Module</p>
+            <p class="text-sm">
+              <span>11:28:41 AM</span> / <span>00:00:12:386</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Batch Module</h5>
+<span class='badge badge-success'>04.02.2024 11:28:41 AM</span>
+<span class='badge badge-danger'>04.02.2024 11:28:54 AM</span>
+<span class='badge badge-default'>00:00:12:386</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin able to generate token with valid credential</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin able to create a program with endpoint , request body and Authorization</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_first_creates_new_program_for_the_lms_from_excel_with_request_body(java.lang.String)">
+                <span>Given Admin first creates New Program "Valid Add new program" for the LMS from Excel with request body</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_makes_get_program_by_id_get_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Then Admin makes get program by Id GET Request "Valid GET Program by ProgramId" for the LMS API from Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_updates_program_with_put_request_from_the_excel(java.lang.String)">
+                <span>When Admin updates Program with PUT request "Valid Update Program by ProgramId" from the Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_makes_get_program_by_id_get_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Then Admin makes get program by Id GET Request "Valid GET Program by ProgramId" for the LMS API from Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin able to create and update a Batch with endpoint , request body and Authorization</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_first_creates_new_batch_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Given Admin first creates New Batch "Valid Create New Batch" for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_makes_get_batch_by_get_batch_id_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Then Admin makes get batch by GET batchId Request "Valid GET Batch by BatchId" for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_updates_batch_with_put_request_from_the_excel(java.lang.String)">
+                <span>When Admin updates Batch with PUT request "Valid Update by Batch Id" from the Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_makes_get_batch_by_get_batch_id_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Then Admin makes get batch by GET batchId Request "Valid GET Batch by BatchId" for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin able to delete batch and program with endpoint, request body and Authorization</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_deletes_batch_by_batch_id_with_get_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Given Admin Deletes Batch by BatchId with GET request "Valid Delete batch by BatchId" for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_makes_get_batch_by_get_batch_id_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Then Admin makes get batch by GET batchId Request "Valid GET Batch by BatchId" for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_deletes_program_by_program_id_with_get_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Then Admin Deletes Program by ProgramID with GET request "Valid Delete Program By ProgramID" for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_makes_get_program_by_id_get_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Then Admin makes get program by Id GET Request "Valid GET Program by ProgramId" for the LMS API from Excel</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin able to Log-out from User</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.User_LogoutSD.admin_request_log_out_from_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Given Admin RequestLog_out from "User log out" for the LMS API from Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin able to create a program with endpoint , request body and Authorization</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_first_creates_new_program_for_the_lms_from_excel_with_request_body(java.lang.String)">
+                <span>Given Admin first creates New Program "Valid Add new program" for the LMS from Excel with request body</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_makes_get_program_by_id_get_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Then Admin makes get program by Id GET Request "Valid GET Program by ProgramId" for the LMS API from Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_updates_program_with_put_request_from_the_excel(java.lang.String)">
+                <span>When Admin updates Program with PUT request "Valid Update Program by ProgramId" from the Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_makes_get_program_by_id_get_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Then Admin makes get program by Id GET Request "Valid GET Program by ProgramId" for the LMS API from Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="38"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin able to create and update a Batch with endpoint , request body and Authorization</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_first_creates_new_batch_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Given Admin first creates New Batch "Valid Create New Batch" for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_makes_get_batch_by_get_batch_id_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Then Admin makes get batch by GET batchId Request "Valid GET Batch by BatchId" for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_updates_batch_with_put_request_from_the_excel(java.lang.String)">
+                <span>When Admin updates Batch with PUT request "Valid Update by Batch Id" from the Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_makes_get_batch_by_get_batch_id_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Then Admin makes get batch by GET batchId Request "Valid GET Batch by BatchId" for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="44"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin able to delete batch and program with endpoint, request body and Authorization</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_deletes_batch_by_batch_id_with_get_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Given Admin Deletes Batch by BatchId with GET request "Valid Delete batch by BatchId" for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_makes_get_batch_by_get_batch_id_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Then Admin makes get batch by GET batchId Request "Valid GET Batch by BatchId" for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_deletes_program_by_program_id_with_get_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Then Admin Deletes Program by ProgramID with GET request "Valid Delete Program By ProgramID" for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.End_To_EndSD.admin_makes_get_program_by_id_get_request_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Then Admin makes get program by Id GET Request "Valid GET Program by ProgramId" for the LMS API from Excel</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="49"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Program Module CRUD Opertaions</p>
+            <p class="text-sm">
+              <span>11:28:54 AM</span> / <span>00:00:01:664</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Program Module CRUD Opertaions</h5>
+<span class='badge badge-success'>04.02.2024 11:28:54 AM</span>
+<span class='badge badge-danger'>04.02.2024 11:28:56 AM</span>
+<span class='badge badge-default'>00:00:01:664</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=49</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="50"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin able to retrieve all programs with Admins</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.ProgramModuleSD.admin_creates_get_request_from_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given Admin creates GET Request "GET All Programs with Users" from "batches" for the LMS API from Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="57"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Batch Module</p>
+            <p class="text-sm">
+              <span>11:28:56 AM</span> / <span>00:00:34:189</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Batch Module</h5>
+<span class='badge badge-success'>04.02.2024 11:28:56 AM</span>
+<span class='badge badge-danger'>04.02.2024 11:29:30 AM</span>
+<span class='badge badge-default'>00:00:34:189</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=57</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="58"><span class="badge log pass-bg mr-2">Pass</span>Check if user able to retrieve all batches  with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_creates_New_Batch_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates New Batch "Create New Batch" from "batches" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="65"><span class="badge log pass-bg mr-2">Pass</span>Check if user able to retrieve all batches  with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_creates_get_request_for_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates get request for "GET All Batches" from "<batches>" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Check if user able to retrieve all batches  with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_creates_request_get_by_batch_id_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User get request from batch get by batchId "GET Batch by BatchId" from "<batches>" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="79"><span class="badge log pass-bg mr-2">Pass</span>Check if user able to retrieve all batches  with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_get_request_from_batch_get_by_batch_name_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User get request from batch get by BatchName "GET Batch by BatchName" from "<batches>" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="86"><span class="badge log pass-bg mr-2">Pass</span>Check if user able to retrieve all batches  with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_updates_batch_by_batch_id_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User Updates Batch by BatchId "Update by Batch Id" from "batches" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="93"><span class="badge log pass-bg mr-2">Pass</span>Check if user able to retrieve all batches  with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_deletes_batch_by_batch_id_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User Deletes Batch by BatchId "Delete batch by BatchId" from "batches" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="100"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">User Module CRUD Operations</p>
+            <p class="text-sm">
+              <span>11:29:30 AM</span> / <span>00:01:32:855</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">User Module CRUD Operations</h5>
+<span class='badge badge-success'>04.02.2024 11:29:30 AM</span>
+<span class='badge badge-danger'>04.02.2024 11:31:03 AM</span>
+<span class='badge badge-default'>00:01:32:855</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=100</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="101"><span class="badge log pass-bg mr-2">Pass</span>Check if user able to create new user with role with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserModuleStepDefinition.admin_creates_new_user_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given Admin creates New User "Create User Login with Role" from "batches" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="108"><span class="badge log pass-bg mr-2">Pass</span>Check if user able retrieve all users along with role with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserModuleStepDefinition.user_creates_get_request_to_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates Get request to "Get All Users" from "batches" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="115"><span class="badge log pass-bg mr-2">Pass</span>Check if user able retrieve all users along with their user ID with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserModuleStepDefinition.user_creates_get_request_to_get_user_by_user_id_with_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates Get request to get user by UserID with "Get User information by UserId" from "batches" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="122"><span class="badge log pass-bg mr-2">Pass</span>Check if user able retrieve all users along with roles and with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserModuleStepDefinition.user_creates_get_request_to_get_user_with_roles_with_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates Get request to get user with roles with "Get all Users with roles" from "batches" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="129"><span class="badge log pass-bg mr-2">Pass</span>Check if user able retrieve the count of all active and inactive users unless roleID is specified,get all the type of users with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserModuleStepDefinition.user_created_get_request_to_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User created get request to "Gets count of active and inactive users" from "batches" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="136"><span class="badge log pass-bg mr-2">Pass</span>Check if user able retrieve all the users by the program batch with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserModuleStepDefinition.user_creates_get_request_to_get_all_the_users_with_program_batch_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates Get request to get all the users with program batch "Gets User by Program Batches " from "batches" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="143"><span class="badge log pass-bg mr-2">Pass</span>Check if user able retrieve all the users for the program ID with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserModuleStepDefinition.user_creates_get_request_to_retrieve_the_users_for_program_with_program_id_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates Get request to retrieve the users for program with program ID "Gets Users for Program" from "batches" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="150"><span class="badge log pass-bg mr-2">Pass</span>Check if user able retrieve all the users by role ID with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserModuleStepDefinition.user_creates_get_request_to_retrieve_the_users_by_role_id_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates Get request to retrieve the users by roleID "Gets Users by roleId" sheet for the LMS API From "batches" Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="157"><span class="badge log pass-bg mr-2">Pass</span>Check if user able retrieve all the active users with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserModuleStepDefinition.user_creates_get_request_to_retrieve_all_the_active_users_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates Get request to retrieve all the active users "Get All active users" from "batches" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="164"><span class="badge log pass-bg mr-2">Pass</span>Check if user able retrieve users by role ID V2 with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserModuleStepDefinition.user_creates_get_request_to_retrieve_users_by_role_id_v2_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates Get request to retrieve users by role ID V2 "Gets Users by roleId V2" from "batches" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="171"><span class="badge log pass-bg mr-2">Pass</span>Check if user able update users by userID with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserModuleStepDefinition.user_creates_put_request_to_update_user_by_user_id_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates Put request to update user by userID "Update User" from "batches" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="178"><span class="badge log pass-bg mr-2">Pass</span>Check if user able update users role status by user ID with  valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserModuleStepDefinition.user_creates_put_request_to_update_users_role_status_by_user_id_from_sheet_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates Put request to update users RoleStatus by UserID "Update User Role Status" from "batches" sheet for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="185"><span class="badge log pass-bg mr-2">Pass</span>Check if user able update users role ID by user ID with  valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserModuleStepDefinition.user_creates_put_request_to_update_users_role_id_by_user_id_from_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates Put request to update users role ID by UserID "Update User RoleID" from "batches" for the LMS API From Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="192"><span class="badge log fail-bg mr-2">Fail</span>Check if user able assign the user role program batch status using userID with  valid LMS API</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="StepDefinition.UserModuleStepDefinition.user_creates_put_request_to_assign_the_user_role_program_batch_status_using_user_id_from_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates Put request to assign the user role program batch status using userID "Assign Update User Role Program Batch Status" from "batches" for the LMS API From Excel</span>
+      <div>
+        <textarea disabled class="code-block">io.cucumber.java.PendingException: TODO: implement me
+	at StepDefinition.UserModuleStepDefinition.user_creates_put_request_to_assign_the_user_role_program_batch_status_using_user_id_from_for_the_lms_api_from_excel(UserModuleStepDefinition.java:462)
+	at ✽.User creates Put request to assign the user role program batch status using userID "Assign Update User Role Program Batch Status" from "batches" for the LMS API From Excel(file:///D:/Rathna/Learning%20IT/Team15_API_AVENGERS_FinalProject/src/test/resources/features/05_UserModule.feature:94)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="199"><span class="badge log fail-bg mr-2">Fail</span>Check if user able to update user login status with  valid LMS API</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="StepDefinition.UserModuleStepDefinition.user_creates_put_request_to_update_user_login_status_from_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates Put request to update user login status "Update User Login Status" from "batches" for the LMS API From Excel</span>
+      <div>
+        <textarea disabled class="code-block">io.cucumber.java.PendingException: TODO: implement me
+	at StepDefinition.UserModuleStepDefinition.user_creates_put_request_to_update_user_login_status_from_for_the_lms_api_from_excel(UserModuleStepDefinition.java:468)
+	at ✽.User creates Put request to update user login status "Update User Login Status" from "batches" for the LMS API From Excel(file:///D:/Rathna/Learning%20IT/Team15_API_AVENGERS_FinalProject/src/test/resources/features/05_UserModule.feature:100)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="206"><span class="badge log fail-bg mr-2">Fail</span>Check if user able to delete the user valid LMS API</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="StepDefinition.UserModuleStepDefinition.user_creates_delete_reuest_to_delet_th_using_from_for_the_lms_api_from_excel(java.lang.String,java.lang.String)">
+                <span>Given User creates Delete reuest to delet th using "Delete User" from "batches" for the LMS API From Excel</span>
+      <div>
+        <textarea disabled class="code-block">io.cucumber.java.PendingException: TODO: implement me
+	at StepDefinition.UserModuleStepDefinition.user_creates_delete_reuest_to_delet_th_using_from_for_the_lms_api_from_excel(UserModuleStepDefinition.java:474)
+	at ✽.User creates Delete reuest to delet th using "Delete User" from "batches" for the LMS API From Excel(file:///D:/Rathna/Learning%20IT/Team15_API_AVENGERS_FinalProject/src/test/resources/features/05_UserModule.feature:106)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="213"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UserRoleProgramBatchmap</p>
+            <p class="text-sm">
+              <span>11:31:03 AM</span> / <span>00:00:01:377</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">UserRoleProgramBatchmap</h5>
+<span class='badge badge-success'>04.02.2024 11:31:03 AM</span>
+<span class='badge badge-danger'>04.02.2024 11:31:04 AM</span>
+<span class='badge badge-default'>00:00:01:377</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=213</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="214"><span class="badge log pass-bg mr-2">Pass</span>Check if user able to retrieve all batches  with valid LMS API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserRoleProgramBatchmapSD.user_get_request_from_from_excel_of_lms_api(java.lang.String)">
+                <span>Given User Get request from "Get Assigned Program/Batch(es) of All Users" From Excel of LMS API</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="221"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">User Logout</p>
+            <p class="text-sm">
+              <span>11:31:04 AM</span> / <span>00:00:01:343</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">User Logout</h5>
+<span class='badge badge-success'>04.02.2024 11:31:04 AM</span>
+<span class='badge badge-danger'>04.02.2024 11:31:05 AM</span>
+<span class='badge badge-default'>00:00:01:343</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=221</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="222"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin able to Log-out from User</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_creates_request_with_credentials(java.lang.String)">
+                <span>Given Admin creates request with "valid" credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_calls_post_https_method_with(java.lang.String)">
+                <span>When Admin calls Post Https method  with "User Sign In"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.userLoginSD.admin_receives_created_with_auto_generated_token(java.lang.Integer)">
+                <span>Then Admin receives 200 created with auto generated token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.User_LogoutSD.admin_request_log_out_from_for_the_lms_api_from_excel(java.lang.String)">
+                <span>Given Admin RequestLog_out from "User log out" for the LMS API from Excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_requests_to_get_request_for_the_lms_api(java.lang.String,java.lang.String)">
+                <span>When User requests to Get "CRUD Operation" Request for the LMS API "End Point"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.BatchSD.user_receives_code_with_response_body(java.lang.String,java.lang.String)">
+                <span>Then User receives "Status Code" code with response body "Status Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">26</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetUsersWithUserID</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetUsersWithUserID</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:30:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='115'>Check if user able retrieve all users along with their user ID with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able retrieve all users along with their user ID with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetAllUsersWithRoles</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetAllUsersWithRoles</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:30:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='122'>Check if user able retrieve all users along with roles and with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able retrieve all users along with roles and with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@UpdateUser</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@UpdateUser</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:30:22 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='171'>Check if user able update users by userID with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able update users by userID with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@05GetBatchById</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@05GetBatchById</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:29:07 AM</td>
+<td>
+<a href="#" class="linked" test-id='57' id='72'>Check if user able to retrieve all batches with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">Batch Module.Check if user able to retrieve all batches with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@UpdateUserRoleID</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@UpdateUserRoleID</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:30:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='185'>Check if user able update users role ID by user ID with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able update users role ID by user ID with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetAllUserwithProgramID</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetAllUserwithProgramID</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:30:13 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='143'>Check if user able retrieve all the users for the program ID with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able retrieve all the users for the program ID with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetAllProgramsWithAdmins</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetAllProgramsWithAdmins</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:28:54 AM</td>
+<td>
+<a href="#" class="linked" test-id='49' id='50'>Check if Admin able to retrieve all programs with Admins</a>
+<div class="">
+<span class="badge badge-default">Program Module CRUD Opertaions.Check if Admin able to retrieve all programs with Admins</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@PutRequestUpdateBybatchId</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PutRequestUpdateBybatchId</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:29:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='57' id='86'>Check if user able to retrieve all batches with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">Batch Module.Check if user able to retrieve all batches with valid LMS API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:29:27 AM</td>
+<td>
+<a href="#" class="linked" test-id='57' id='93'>Check if user able to retrieve all batches with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">Batch Module.Check if user able to retrieve all batches with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@UpdateUserLoginStatus</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@UpdateUserLoginStatus</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:31:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='199'>Check if user able to update user login status with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able to update user login status with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@UpdateUserRoleProgramBatchStatus</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@UpdateUserRoleProgramBatchStatus</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:31:01 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='192'>Check if user able assign the user role program batch status using userID with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able assign the user role program batch status using userID with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetUsersbyroleIDV2</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetUsersbyroleIDV2</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:30:21 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='164'>Check if user able retrieve users by role ID V2 with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able retrieve users by role ID V2 with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@05GetBatchByName</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@05GetBatchByName</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:29:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='57' id='79'>Check if user able to retrieve all batches with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">Batch Module.Check if user able to retrieve all batches with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetAssignedProgram/Batch(es)ofAllUsers</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetAssignedProgram/Batch(es)ofAllUsers</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:31:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='213' id='214'>Check if user able to retrieve all batches with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">UserRoleProgramBatchmap.Check if user able to retrieve all batches with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@DeleteUser</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DeleteUser</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:31:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='206'>Check if user able to delete the user valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able to delete the user valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@PostE2ENewBatch</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PostE2ENewBatch</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:28:44 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='17'>Check if Admin able to create and update a Batch with endpoint , request body and Authorization</a>
+<div class="">
+<span class="badge badge-default">Batch Module.Check if Admin able to create and update a Batch with endpoint , request body and Authorization</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:28:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='38'>Check if Admin able to create and update a Batch with endpoint , request body and Authorization</a>
+<div class="">
+<span class="badge badge-default">Batch Module.Check if Admin able to create and update a Batch with endpoint , request body and Authorization</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@PostE2EDelete</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PostE2EDelete</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:28:46 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='23'>Check if Admin able to delete batch and program with endpoint, request body and Authorization</a>
+<div class="">
+<span class="badge badge-default">Batch Module.Check if Admin able to delete batch and program with endpoint, request body and Authorization</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:28:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='44'>Check if Admin able to delete batch and program with endpoint, request body and Authorization</a>
+<div class="">
+<span class="badge badge-default">Batch Module.Check if Admin able to delete batch and program with endpoint, request body and Authorization</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@05GetAllBatches</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@05GetAllBatches</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:29:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='57' id='65'>Check if user able to retrieve all batches with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">Batch Module.Check if user able to retrieve all batches with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetAllActiveUsers</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetAllActiveUsers</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:30:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='157'>Check if user able retrieve all the active users with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able retrieve all the active users with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetAllUserwithRoleID</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetAllUserwithRoleID</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:30:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='150'>Check if user able retrieve all the users by role ID with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able retrieve all the users by role ID with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@UpdateUserRoleStatus</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@UpdateUserRoleStatus</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:30:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='178'>Check if user able update users role status by user ID with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able update users role status by user ID with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CreateNewBatch</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CreateNewBatch</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:28:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='57' id='58'>Check if user able to retrieve all batches with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">Batch Module.Check if user able to retrieve all batches with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetUserbyprogrambatches</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetUserbyprogrambatches</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:30:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='136'>Check if user able retrieve all the users by the program batch with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able retrieve all the users by the program batch with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetAllUsers</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetAllUsers</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:30:00 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='108'>Check if user able retrieve all users along with role with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able retrieve all users along with role with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@POST_CreateNewUserWithRole</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@POST_CreateNewUserWithRole</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:29:30 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='101'>Check if user able to create new user with role with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able to create new user with role with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@PostE2ENewProgram</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PostE2ENewProgram</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:28:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='11'>Check if Admin able to create a program with endpoint , request body and Authorization</a>
+<div class="">
+<span class="badge badge-default">Batch Module.Check if Admin able to create a program with endpoint , request body and Authorization</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:28:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='32'>Check if Admin able to create a program with endpoint , request body and Authorization</a>
+<div class="">
+<span class="badge badge-default">Batch Module.Check if Admin able to create a program with endpoint , request body and Authorization</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetTheCountOfActiveAndInactiveUsers</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetTheCountOfActiveAndInactiveUsers</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:30:07 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='129'>Check if user able retrieve the count of all active and inactive users unless roleID is specified,get all the type of users with valid LMS API</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able retrieve the count of all active and inactive users unless roleID is specified,get all the type of users with valid LMS API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">io.cucumber.java.PendingException</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>io.cucumber.java.PendingException</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:31:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='196'>Given User creates Put request to assign the user role program batch status using userID "Assign Update User Role Program Batch Status" from "batches" for the LMS API From Excel</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able assign the user role program batch status using userID with valid LMS API.Given User creates Put request to assign the user role program batch status using userID "Assign Update User Role Program Batch Status" from "batches" for the LMS API From Excel</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:31:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='203'>Given User creates Put request to update user login status "Update User Login Status" from "batches" for the LMS API From Excel</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able to update user login status with valid LMS API.Given User creates Put request to update user login status "Update User Login Status" from "batches" for the LMS API From Excel</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:31:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='100' id='210'>Given User creates Delete reuest to delet th using "Delete User" from "batches" for the LMS API From Excel</a>
+<div class="">
+<span class="badge badge-default">User Module CRUD Operations.Check if user able to delete the user valid LMS API.Given User creates Delete reuest to delet th using "Delete User" from "batches" for the LMS API From Excel</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
